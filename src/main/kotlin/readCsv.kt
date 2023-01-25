@@ -8,6 +8,4 @@ fun readCsv(fileName: String): List<List<String>> {
         .map {
             it.split(',', ignoreCase = false)
         }.toList()
-
-
 }
