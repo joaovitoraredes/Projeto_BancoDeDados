@@ -4,7 +4,7 @@ var Clientes: MutableSet<Account> = mutableSetOf()
 
 class Transacoes {
 
-    fun transformarEmUmaLinhaDeItens(itens : List<String>): Account{
+    fun linhaDeItens(itens : List<String>): Account{
         return Account(
             itens[0], //AGENCIA
             itens[1], //CONTA
