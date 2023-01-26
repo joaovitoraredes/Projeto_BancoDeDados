@@ -40,7 +40,7 @@ fun main() {
     val linhaDeOperacoes = mutableListOf<Account>()
 
     //Guardando os valores do arquivo csv na linhaDaOperação(MutableList)
-    csv.forEach{linhaDeOperacoes.add(Transacoes().transformarEmUmaLinhaDeItens(it))}
+    csv.forEach{linhaDeOperacoes.add(Transacoes().linhaDeItens(it))}
     linhaDeOperacoes.forEach {
         Clientes.add(Account(agencia = it.agencia,conta = it.conta, banco = it.banco, titular = it.titular, operacao = it.operacao, dataHora = it.dataHora, valor = it.valor))
     }
